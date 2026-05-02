@@ -29,4 +29,6 @@ Full contributing guide coming soon.
 ## Status
 Early stage. Content is being actively written.
 
-> Born out of frustration with poorly written textbooks.
+
+
+Born out of frustration with poorly written textbooks.
