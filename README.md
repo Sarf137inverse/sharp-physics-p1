@@ -10,8 +10,8 @@ still in early stage. Structure system is being actively iterated
 ## File Naming Convention
 
 Examples:
-ch08-kinetic-theory.md
-ch09-thermodynamics.md
+ch08-kinetic-theory.md \
+ch09-thermodynamics.md \
 ch10-ideal-gas.md
 
 Rules:
