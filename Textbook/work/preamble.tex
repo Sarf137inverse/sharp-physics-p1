@@ -1,0 +1,65 @@
+% ================================================
+% Sharp-Physics-1st-Paper | preamble.tex
+% Compiler: LuaLaTeX (REQUIRED — do not use pdfLaTeX or XeLaTeX)
+% ================================================
+
+% ------------------------------------------------
+% Language & Fonts
+% ------------------------------------------------
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\setmainlanguage{bengali}
+\setotherlanguage{english}
+
+% Bengali — Noto Serif Bengali Variable Font
+% Full weight axis unlocked (300–900)
+% Font file must live in Fonts/Bangla/
+\newfontfamily\bengalifont[
+  Script=Bengali,
+  Path=Fonts/Bangla/,
+  UprightFont=NotoSerifBengali-Variable.ttf,
+  BoldFont=NotoSerifBengali-Variable.ttf,
+  UprightFeatures={RawFeature={+wght=400}},
+  BoldFeatures={RawFeature={+wght=700}},
+  FontFace={l}{n}{Font=NotoSerifBengali-Variable.ttf, RawFeature={+wght=300}},
+  FontFace={mb}{n}{Font=NotoSerifBengali-Variable.ttf, RawFeature={+wght=500}},
+  FontFace={sb}{n}{Font=NotoSerifBengali-Variable.ttf, RawFeature={+wght=600}},
+  FontFace={eb}{n}{Font=NotoSerifBengali-Variable.ttf, RawFeature={+wght=800}},
+  FontFace={ub}{n}{Font=NotoSerifBengali-Variable.ttf, RawFeature={+wght=900}},
+]{NotoSerifBengali-Variable.ttf}
+
+% English — FreeSerif (bundled with TeX Live, no upload needed)
+\newfontfamily\englishfont{FreeSerif}
+
+% NOTE: Font choices are provisional.
+% Final typography requires expert Bengali typography review before publication.
+% Custom weight shortcuts — uncomment and add to this list as needed:
+\newcommand{\textsb}[1]{{\fontseries{sb}\selectfont #1}}  % semibold
+\newcommand{\texteb}[1]{{\fontseries{eb}\selectfont #1}}  % extrabold
+\newcommand{\textlt}[1]{{\fontseries{l}\selectfont #1}}   % light
+
+% ------------------------------------------------
+% Math
+% ------------------------------------------------
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{physics}
+
+% ------------------------------------------------
+% Figures & Diagrams
+% ------------------------------------------------
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+
+% ------------------------------------------------
+% Layout
+% ------------------------------------------------
+\usepackage{geometry}
+\usepackage{hyperref}
+
+% ------------------------------------------------
+% Custom environments
+% Grows as chapters demand — added only via BDFL approval
+% ------------------------------------------------
