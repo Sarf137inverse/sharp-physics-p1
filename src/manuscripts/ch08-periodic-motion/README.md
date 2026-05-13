@@ -3,16 +3,15 @@
 ###### Source
 Based on Hasan Publications HSC Physics 1st Paper, Chapter 8.
 
-###### Current State
-
- 🔵 পর্যাবৃত্তি (Periodicity) — complete
- 🔵 সরল দোলন গতি (SHM) definition — complete
- 🔵 সাধারণ সমীকরণ (General equation) — complete
- 🟡 অন্তরক সমীকরণ derivation — placeholder only image of derivation, to be translated into latex
- 🔵 রাশিমালা (Quantities) — complete
- 🔵 যান্ত্রিকশক্তি (Mechanical energy) — complete
- 🔴 Spring-mass system — not yet written
- 🔴 Simple pendulum — not yet written
+###### Current State  
+ 🔵 পর্যাবৃত্তি (Periodicity) — complete  
+ 🔵 সরল দোলন গতি (SHM) definition — complete  
+ 🔵 সাধারণ সমীকরণ (General equation) — complete  
+ 🟡 অন্তরক সমীকরণ derivation — placeholder only image of derivation, to be translated into latex  
+ 🔵 রাশিমালা (Quantities) — complete  
+ 🔵 যান্ত্রিকশক্তি (Mechanical energy) — complete  
+ 🔴 Spring-mass system — not yet written  
+ 🔴 Simple pendulum — not yet written  
  🔴 Worked examples — not yet written
 
 ###### Known Issues
