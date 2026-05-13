@@ -1,5 +1,5 @@
 
-##### chapter 08 — পর্যাবৃত্ত গতি (Periodic Motion)
+##### chapter 08 — পর্যাবৃত্ত গতি (Periodic Motion) | README.md | Notes
 ###### Source
 Based on Hasan Publications HSC Physics 1st Paper, Chapter 8.
 
