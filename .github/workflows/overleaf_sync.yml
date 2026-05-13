@@ -1,7 +1,7 @@
 name: Manual Overleaf Sync
 
 on:
-  workflow_dispatch: # This enables the manual click button in GitHub Actions
+  workflow_dispatch:
 
 jobs:
   sync:
@@ -10,8 +10,8 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Overleaf Sync Action
-        uses: subhamX/overleaf_sync_with_git@v1.2.0
+      - name: Overleaf Sync
+        uses: mathisve/overleaf-sync-action@main
         with:
           OVERLEAF_PROJECT_ID: ${{ secrets.OVERLEAF_PROJECT_ID }}
           OVERLEAF_COOKIE: ${{ secrets.OVERLEAF_COOKIE }}
