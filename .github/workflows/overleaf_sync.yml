@@ -1,17 +1,19 @@
-name: Manual Overleaf Sync
-
+name: sync overleaf projects
 on:
+  schedule:
+    - cron: '*/15 * * * *'
   workflow_dispatch:
 
 jobs:
-  sync:
+  syncprojects:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-
-      - name: Overleaf Sync
-        uses: mathisve/overleaf-sync-action@main
+      - name: overleaf-sync
+        uses: jmir1/overleaf-sync@0.0.1
         with:
-          OVERLEAF_PROJECT_ID: ${{ secrets.OVERLEAF_PROJECT_ID }}
-          OVERLEAF_COOKIE: ${{ secrets.OVERLEAF_COOKIE }}
+          email: ${{ SECRETS.INPUT_EMAIL }}
+          password: ${{ SECRETS.INPUT_PASSWORD }}
+          repotoken: ${{ SECRETS.GITHUB_TOKEN }}
+          gituser: ${{ github.actor }}
+          reponame: ${{ github.repository }}
+          gitemail: "${{ github.actor }}@users.noreply.github.com"
