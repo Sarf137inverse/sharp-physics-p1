@@ -1,6 +1,6 @@
 # Sharp Physics 1st Paper
 
-Respect to out great BDFL, Sarfaraz
+BDFL
 
 ## Project Structure
 
