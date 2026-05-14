@@ -1,13 +1,13 @@
-# Sharp-Physics-1st-Paper
+##### Sharp-Physics-1st-Paper
 ⚠️ README under construction
 
-# Project Structure
+###### Project Structure
 ~~/chapters/        → main textbook content
 /cheat-sheets/    → quick reference sheets per chapter
 /assets/          → images, diagrams, figures~~
 still in early stage. Structure system is being actively iterated
 
-## File Naming Convention
+###### File Naming Convention
 
 Examples:\
 ch08-kinetic-theory.md \
@@ -23,10 +23,10 @@ Rules:
 Allowed abbreviations:
 - chapter → ch
 
-## Contributing
+###### Contributing
 Full contributing guide coming soon.
 
-## Status
+###### Status
 Early stage. Content is being actively written.
 
 
