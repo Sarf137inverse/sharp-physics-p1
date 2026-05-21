@@ -28,8 +28,23 @@
   FontFace={ub}{n}{Font=NotoSerifBengali-Variable.ttf, RawFeature={+wght=900}},
 ]{NotoSerifBengali-Variable.ttf}
 
-% English — FreeSerif (bundled with Overleaf, no upload needed)
-\newfontfamily\englishfont{FreeSerif}
+% English — Source Serif 4 (variable)
+\newfontfamily\englishfont[
+  Path=Fonts/English/,
+  UprightFont=SourceSerif4-Variable.ttf,
+  BoldFont=SourceSerif4-Variable.ttf,
+  ItalicFont=SourceSerif4-Variable.ttf,
+  BoldItalicFont=SourceSerif4-Variable.ttf,
+  UprightFeatures={RawFeature={+wght=400,+opsz=12}},
+  BoldFeatures={RawFeature={+wght=700,+opsz=12}},
+  ItalicFeatures={RawFeature={+wght=400,+ital=1,+opsz=12}},
+  BoldItalicFeatures={RawFeature={+wght=700,+ital=1,+opsz=12}},
+  FontFace={l}{n}{Font=SourceSerif4-Variable.ttf, RawFeature={+wght=300,+opsz=12}},
+  FontFace={mb}{n}{Font=SourceSerif4-Variable.ttf, RawFeature={+wght=500,+opsz=12}},
+  FontFace={sb}{n}{Font=SourceSerif4-Variable.ttf, RawFeature={+wght=600,+opsz=12}},
+  FontFace={eb}{n}{Font=SourceSerif4-Variable.ttf, RawFeature={+wght=800,+opsz=12}},
+  FontFace={ub}{n}{Font=SourceSerif4-Variable.ttf, RawFeature={+wght=900,+opsz=12}},
+]{SourceSerif4-Variable.ttf}
 
 % NOTE: Font choices are provisional.
 % Final typography requires expert Bengali typography review before publication.
