@@ -2,17 +2,22 @@
 ⚠️ README under construction
 
 ###### Project Structure
-~~/chapters/        → main textbook content
-/cheat-sheets/    → quick reference sheets per chapter
-/assets/          → images, diagrams, figures~~
-still in early stage. Structure system is being actively iterated
+
+/cheat-sheets/    → cheat sheets for each chapter. Unmaintained.
+/assets/          → images, diagrams, and figures for this repository.
+/textbook/        → compiled PDF textbook, built from /src.
+/src              → active work directory.
+
+Directories marked as unmaintained are remnants of the old project structure.
+
+still in early stage. Structure system is being actively iterated.
 
 ###### File Naming Convention
 
 Examples:\
-ch08-kinetic-theory.md \
-ch09-thermodynamics.md \
-ch10-ideal-gas.md
+ch08-kinetic-theory.tex \
+ch09-thermodynamics.tex \
+ch10-ideal-gas.tex
 
 Rules:
 - Two digit chapter numbers for correct sorting (ch08 not ch8)
