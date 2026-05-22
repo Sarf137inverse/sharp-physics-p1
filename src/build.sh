@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# build.sh — primitive build script for Sharp-Physics-1st-Paper
+# build.sh — primitive build script for Sharp-Physics-1st-Paper. vibe coded using claude
 # Run from: src/   (i.e., bash build.sh)
 # Output:   src/build/main.pdf
 # Logs:     src/build/main.log
