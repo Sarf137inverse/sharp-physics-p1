@@ -25,3 +25,5 @@ lualatex \
   main.tex
 
 echo "[build] Done. Output: src/build/main.pdf"
+
+# vibe coded by sarf using claude.  
