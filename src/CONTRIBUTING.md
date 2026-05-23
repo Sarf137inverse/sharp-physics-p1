@@ -1,3 +1,4 @@
+⚠️ CONTRIBUTING.md under construction
 # Contributing to Sharp Physics 1st Paper
 
 ## Governance
