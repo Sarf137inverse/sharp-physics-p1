@@ -1,4 +1,5 @@
 # Sharp Physics 1st Paper
+⚠️ README under construction
 
 BDFL
 
@@ -7,14 +8,14 @@ BDFL
 ```
 main.tex                        — Master file, stitches all chapters
 preamble.tex                    — All packages and font setup (touch only with BDFL approval)
-chapters/
+manuscripts/
     ch08-periodic-motion/
         main.tex                — Chapter content
         assets/                 — Chapter-specific assets and figures
         notes.md                — Contributor notes for this chapter
 Fonts/
 	English/
-		donkeyfontenglishyomommasofatshe.ttfuck
+		SourceSerif4-Variable.ttf
     Bangla/
         NotoSerifBengali-Variable.ttf
 ```
