@@ -3,9 +3,9 @@
 
 ###### Project Structure
 
-/cheat-sheets/    → cheat sheets for each chapter. Unmaintained.
-/assets/          → images, diagrams, and figures for this repository.
-/textbook/        → compiled PDF textbook, built from /src.
+/cheat-sheets/    → cheat sheets for each chapter. Unmaintained.  \
+/assets/          → images, diagrams, and figures for this repository.  \
+/textbook/        → compiled PDF textbook, built from /src.  \
 /src              → active work directory.
 
 Directories marked as unmaintained are remnants of the old project structure.
