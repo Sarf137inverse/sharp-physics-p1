@@ -29,7 +29,7 @@ echo "[build] Running LuaLaTeX (pass 1)..."
 lualatex \
   --interaction=nonstopmode \
   --output-directory=build \
-  main.tex
+  main.tex 2>&1 | grep -E "^(! |l\.|Error|Warning|Overfull|Underfull|LaTeX Warning)"
 
 # Second pass for cross-references, TOC, etc.
 echo "[build] Running LuaLaTeX (pass 2)..."
