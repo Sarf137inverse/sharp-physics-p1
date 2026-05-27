@@ -13,6 +13,17 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$SCRIPT_DIR"
 
 mkdir -p build
+mkdir -p build/manuscripts/ch01-measurement
+mkdir -p build/manuscripts/ch02-vector
+mkdir -p build/manuscripts/ch03-dynamics
+mkdir -p build/manuscripts/ch04-mechanics
+mkdir -p build/manuscripts/ch05-energy
+mkdir -p build/manuscripts/ch06-gravitation
+mkdir -p build/manuscripts/ch07-matter
+mkdir -p build/manuscripts/ch08-periodic-motion
+mkdir -p build/manuscripts/ch09-waves
+mkdir -p build/manuscripts/ch10-ideal-gas
+
 
 echo "[build] Running LuaLaTeX (pass 1)..."
 lualatex \
