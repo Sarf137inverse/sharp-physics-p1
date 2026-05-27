@@ -1,0 +1,30 @@
+{
+    "name": "Sharp Physics",
+    "build": {
+      "dockerfile": "../Dockerfile"
+    },
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "James-Yu.latex-workshop"
+        ],
+        "settings": {
+          "latex-workshop.latex.tools": [
+            {
+              "name": "build",
+              "command": "bash",
+              "args": ["build.sh"]
+            }
+          ],
+          "latex-workshop.latex.recipes": [
+            {
+              "name": "build.sh",
+              "tools": ["build"]
+            }
+          ],
+          "latex-workshop.latex.outDir": "build"
+        }
+      }
+    },
+    "workspaceFolder": "/workspace"
+  }
