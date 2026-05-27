@@ -16,7 +16,7 @@ Seniors review and draft changes. Contributors propose via GitHub issues.
 
 ## File Structure
 
-- One folder per chapter under `chapters/`
+- One folder per chapter under `manuscripts/`
 - Each chapter folder contains:
   - `main.tex` — chapter content
   - `figures/` — figures used in this chapter
