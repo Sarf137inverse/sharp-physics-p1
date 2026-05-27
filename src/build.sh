@@ -36,7 +36,7 @@ echo "[build] Running LuaLaTeX (pass 2)..."
 lualatex \
   --interaction=nonstopmode \
   --output-directory=build \
-  main.tex
+  main.tex 2>&1 | grep -E "^(! |l\.|Error|Warning|Overfull|Underfull|LaTeX Warning)"
 
 echo "[build] Done. Output: src/build/main.pdf"
 
