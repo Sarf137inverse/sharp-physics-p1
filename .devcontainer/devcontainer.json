@@ -1,7 +1,7 @@
 {
     "name": "Sharp Physics",
     "build": {
-      "dockerfile": "../Dockerfile"
+      "dockerFile": "../Dockerfile"
     },
     "customizations": {
       "vscode": {
