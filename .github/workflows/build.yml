@@ -27,6 +27,10 @@ jobs:
             -v "${{ github.workspace }}/src:/workspace" \
             sharp-physics-builder \
             bash build.sh
+            
+      - name: Show log on failure
+        if: failure()
+        run: cat src/build/main.log
 
       - name: Upload PDF artifact
         uses: actions/upload-artifact@v4
