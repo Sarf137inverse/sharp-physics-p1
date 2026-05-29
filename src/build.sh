@@ -38,7 +38,7 @@ lualatex \
   --output-directory=build \
   main.tex
 
-if [ ! -f build/main.pdf ]; then
+if [ ! -f build/main.pdf ]; then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
   echo "[build] ERROR: PDF not produced. Check build/main.log"
   exit 1
 fi
