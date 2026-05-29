@@ -38,6 +38,11 @@ lualatex \
   --output-directory=build \
   main.tex 2>&1 | grep -E "^(! |l\.|Error|Warning|Overfull|Underfull|LaTeX Warning)" || true
 
+if [ ! -f build/main.pdf ]; then
+  echo "[build] ERROR: PDF not produced. Check build/main.log"
+  exit 1
+fi
+
 echo "[build] Done. Output: src/build/main.pdf"
 
 # vibe coded by sarf using claude.  
