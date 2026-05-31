@@ -30,6 +30,11 @@ lualatex \
   --interaction=nonstopmode \
   --output-directory=build \
   main.tex 2>&1 | grep -E "^(! |l\.|Error|Warning|Overfull|Underfull|LaTeX Warning)"
+LUALATEX_EXIT=${PIPESTATUS[0]}
+if [ $LUALATEX_EXIT -ne 0 ]; then
+  echo "[build] LuaLaTeX failed. Full log: build/main.log"
+  exit $LUALATEX_EXIT
+fi
 
 # Second pass for cross-references, TOC, etc.
 echo "[build] Running LuaLaTeX (pass 2)..."
@@ -37,6 +42,11 @@ lualatex \
   --interaction=nonstopmode \
   --output-directory=build \
   main.tex 2>&1 | grep -E "^(! |l\.|Error|Warning|Overfull|Underfull|LaTeX Warning)"
+LUALATEX_EXIT=${PIPESTATUS[0]}
+if [ $LUALATEX_EXIT -ne 0 ]; then
+  echo "[build] LuaLaTeX failed. Full log: build/main.log"
+  exit $LUALATEX_EXIT
+fi
 
 echo "[build] Done. Output: src/build/main.pdf"
 
