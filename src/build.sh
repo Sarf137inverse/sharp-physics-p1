@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-# build.sh — primitive build script for Sharp-Physics-1st-Paper. vibe coded using claude
 # Run from: src/   (i.e., bash build.sh)
 # Output:   src/build/main.pdf
 # Logs:     src/build/main.log
@@ -12,6 +11,7 @@ export LC_ALL=en_US.UTF-8
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$SCRIPT_DIR"
 
+# Creating the build directory
 mkdir -p build
 mkdir -p build/manuscripts/ch01-measurement
 mkdir -p build/manuscripts/ch02-vector
@@ -24,7 +24,7 @@ mkdir -p build/manuscripts/ch08-periodic-motion
 mkdir -p build/manuscripts/ch09-waves
 mkdir -p build/manuscripts/ch10-ideal-gas
 
-
+# First pass.
 echo "[build] Running LuaLaTeX (pass 1)..."
 lualatex \
   --interaction=nonstopmode \
@@ -49,5 +49,3 @@ if [ $LUALATEX_EXIT -ne 0 ]; then
 fi
 
 echo "[build] Done. Output: src/build/main.pdf"
-
-# vibe coded by sarf using claude.  

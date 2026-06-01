@@ -1,39 +1,63 @@
-##### Sharp-Physics-1st-Paper
-⚠️ README under construction
+# Sharp Physics — 1st Paper
 
-###### Project Structure
+An engineered physics textbook.
 
-/cheat-sheets/    → cheat sheets for each chapter. Unmaintained.
-/assets/          → images, diagrams, and figures for this repository.
-/textbook/        → compiled PDF textbook, built from /src.
-/src              → active work directory.
+**[Download latest PDF](../../releases/latest)**
 
-Directories marked as unmaintained are remnants of the old project structure.
+---
 
-still in early stage. Structure system is being actively iterated.
+## Why it exists
 
-###### File Naming Convention
+Most textbooks are designed around content coverage. Typography, explanation, definition, chapter outline, every decision was made by eyeballing. All this is a tax on the student's time. Sharp is engineered so that every word is understood fast and recalled under pressure.
 
-Examples:\
-ch08-kinetic-theory.tex \
-ch09-thermodynamics.tex \
-ch10-ideal-gas.tex
+---
 
-Rules:
-- Two digit chapter numbers for correct sorting (ch08 not ch8)
-- Lowercase always
-- Hyphens (-), not spaces or underscores
-- No abbreviations unless listed below
+## Principles
 
-Allowed abbreviations:
-- chapter → ch
+1. Exam focused. No content outside the NCTB syllabus.
+2. Any factual errors in the NCTB approved textbooks will persist here, with the correct fact cited alongside.
+3. Chapter outline is independent from the board syllabus, but maintains the actual contents.
+4. Definitions and derivations are written from first principles, not tradition.
+5. Sharp is an ecosystem. The book is one part of it.
+6. This project follows a BDFL governance model.
 
-###### Contributing
-Full contributing guide coming soon.
+---
 
-###### Status
-Early stage. Content is being actively written.
+## Setup
 
+Clone the repo, run the setup script for your OS from the project root:
+
+**Linux & Github Codespace**
+```bash
+bash scripts/setup-linux.sh
+```
+
+**Mac**
+```bash
+bash scripts/setup-mac.sh
+```
+
+**Windows** (PowerShell as Administrator)
+```powershell
+.\scripts\setup-windows.ps1
+```
+
+To compile:
+```bash
+bash src/build.sh
+```
+
+---
+
+## Contributing
+
+Read `CONTRIBUTING.md`.
+
+---
+
+## Status
+
+⚠️ Early stage. Actively being worked on. 
 
 
 Born out of frustration with poorly written textbooks.
