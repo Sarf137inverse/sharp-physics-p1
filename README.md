@@ -51,7 +51,7 @@ bash src/build.sh
 
 ## Contributing
 
-Read '[CONTRIBUTING.md](CONTRIBUTING.md)'.
+Read `[CONTRIBUTING.md](CONTRIBUTING.md)`.
 
 ---
 
