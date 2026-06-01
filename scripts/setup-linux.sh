@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+
+# codespace setup uses this as its setup scripts.
+
 set -e
 
 echo "[setup] Installing TeX Live for Sharp Physics..."
