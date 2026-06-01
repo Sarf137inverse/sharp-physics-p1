@@ -63,13 +63,13 @@ Definitions and derivations are written from first principles. Not copied. Not p
 ## Technical Pitfalls
 
 **Font loading**
-Font files are in `Fonts/`. Paths are declared in `preamble.tex` with explicit `Path=` — do not move font files.
+Font files are in `Fonts/`. Paths are declared in `preamble.tex` with explicit `Path=`, do not move font files.
 
 **Variable fonts**
 Require explicit `RawFeature={+wght=N}` for each weight. Without it LaTeX substitutes regular weight silently.
 
 **Filenames**
-Commas in font filenames break LaTeX's option parser. Rename files before use — no commas.
+Commas in font filenames break LaTeX's option parser. Rename files before use, no commas.
 
 **`\include` and aux files**
 `build.sh` creates the required aux subdirectories automatically. If you add a new chapter, add its `mkdir -p` line to `build.sh`.
