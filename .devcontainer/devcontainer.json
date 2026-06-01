@@ -13,7 +13,7 @@
             {
               "name": "build",
               "command": "bash",
-              "args": ["build.sh"]
+              "args": ["src/build.sh"]
             }
           ],
           "latex-workshop.latex.recipes": [

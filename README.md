@@ -1,101 +1,63 @@
-##### Sharp-Physics-1st-Paper
-⚠️ README under construction
+# Sharp Physics — 1st Paper
 
-###### Project Structure
+An engineered physics textbook.
 
-/cheat-sheets/ &nbsp;→ chapterwise cheat sheets. Unmaintained.  \
-/assets/ &emsp;&emsp;&emsp;→ assets for this repository.  \
-/textbook/ &emsp;&emsp; → compiled PDF textbook, built from /src.  \
-/src &emsp;&emsp;&emsp;&emsp;&emsp;→ active work directory.
+**[Download latest PDF](../../releases/latest)**
 
-still in early stage. Structure system is being actively iterated.
+---
 
-###### Setup
-Local setup. Run the following script.
+## Why it exists
 
-***Linux***
+Most textbooks are designed around content coverage. Typography, explanation, definition, chapter outline, every decision was made by eyeballing. All this is a tax on the student's time. Sharp is engineered so that every word is understood fast and recalled under pressure.
+
+---
+
+## Principles
+
+1. Exam focused. No content outside the NCTB syllabus.
+2. Any factual errors in the NCTB approved textbooks will persist here, with the correct fact cited alongside.
+3. Chapter outline is independent from the board syllabus, but maintains the actual contents.
+4. Definitions and derivations are written from first principles, not tradition.
+5. Sharp is an ecosystem. The book is one part of it.
+6. This project follows a BDFL governance model.
+
+---
+
+## Setup
+
+Clone the repo, run the setup script for your OS from the project root:
+
+**Linux & Github Codespace**
 ```bash
-#!/usr/bin/env bash
-set -e
-
-echo "[setup] Installing TeX Live for Sharp Physics..."
-
-sudo apt-get update
-sudo apt-get install -y \
-    texlive-luatex \
-    texlive-lang-other \
-    texlive-science \
-    texlive-pictures \
-    texlive-latex-extra
-
-echo "[setup] Done. Run 'bash src/build.sh' to compile."
+bash scripts/setup-linux.sh
 ```
-***Mac***
+
+**Mac**
 ```bash
-#!/usr/bin/env bash
-set -e
-
-echo "[setup] Installing TeX Live for Sharp Physics..."
-
-if ! command -v brew &>/dev/null; then
-    echo "[setup] Homebrew not found. Installing..."
-    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-fi
-
-brew install --cask mactex-no-gui
-
-echo "[setup] Refreshing PATH..."
-eval "$(/usr/libexec/path_helper)"
-
-echo "[setup] Done. Run 'bash src/build.sh' to compile."
+bash scripts/setup-mac.sh
 ```
-***Windows***
+
+**Windows** (PowerShell as Administrator)
 ```powershell
-# Run this in PowerShell as Administrator
-
-Write-Host "[setup] Installing TeX Live for Sharp Physics..."
-
-if (-not (Get-Command choco -ErrorAction SilentlyContinue)) {
-    Write-Host "[setup] Chocolatey not found. Installing..."
-    Set-ExecutionPolicy Bypass -Scope Process -Force
-    [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072
-    Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
-}
-
-choco install texlive -y
-
-Write-Host "[setup] Refreshing environment..."
-$env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
-
-Write-Host "[setup] Done. Run 'bash src/build.sh' in Git Bash to compile."
+.\scripts\setup-windows.ps1
 ```
-Then compile:
+
+To compile:
 ```bash
 bash src/build.sh
 ```
-###### File Naming Convention
 
-Examples:
-```
-ch08-kinetic-theory.tex
-ch09-thermodynamics.tex
-ch10-ideal-gas.tex
-```
-Rules:
-- Two digit chapter numbers for correct sorting (ch08 not ch8)
-- Lowercase always
-- Hyphens (-), not spaces or underscores
-- No abbreviations unless listed below
+---
 
-Allowed abbreviations:
-- chapter → ch
+## Contributing
 
-###### Contributing
-Full contributing guide coming soon.
+Read `CONTRIBUTING.md`.
 
-###### Status
-Early stage. Content is being actively written.
+---
 
+## Status
+
+⚠️ Early stage. Actively being worked on. 
 
 
 Born out of frustration with poorly written textbooks.
