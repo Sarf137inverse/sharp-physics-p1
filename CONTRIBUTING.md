@@ -1,6 +1,6 @@
 # Contributing to Sharp Physics
 
-Read `PHILOSOPHY.md` before anything else. Everything here assumes you have.
+Read [PHILOSOPHY.md](PHILOSOPHY.md) before anything else. Everything here assumes you have.
 
 ---
 
