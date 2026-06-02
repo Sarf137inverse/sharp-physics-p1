@@ -2,7 +2,7 @@
 
 An engineered physics textbook.
 
-**[Download latest PDF](../../releases/latest)**
+**[Download latest PDF](../../releases/latest/main.pdf)**
 
 ---
 
