@@ -1,4 +1,6 @@
 # The Sharp Philosophy
+written solely by claude
+will be worked on later
 
 ## The Problem
 
