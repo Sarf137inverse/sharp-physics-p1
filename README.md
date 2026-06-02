@@ -2,7 +2,7 @@
 
 An engineered physics textbook.
 
-**[Download latest PDF](../../releases/latest/main.pdf)**
+**[Download latest PDF](https://github.com/Sarf137inverse/sharp-physics-p1/releases/download/latest/main.pdf)**
 
 ---
 
