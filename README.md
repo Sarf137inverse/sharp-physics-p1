@@ -1,4 +1,4 @@
-# Sharp Physics — 1st Paper
+# Sharp Physics — 1st Paper 
 
 An engineered physics textbook.
 
